@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Space</title>
+
+    <!-- Linking CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /*======================================
+        //--//-->   ABOUT
+        ======================================*/
+        body {
+            background-image: url('images/space.gif'); /* Replace with your GIF path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Change the navbar background color to white */
+        #ftco-navbar {
+            background-color: white !important;
+        }
+
+        /* Change the navbar text color to green */
+        #ftco-navbar .navbar-brand,
+        #ftco-navbar .nav-link {
+            color: green !important;
+        }
+
+        /* Optional: Ensure active and hover states are also green */
+        #ftco-navbar .nav-link:hover,
+        #ftco-navbar .nav-link:focus,
+        #ftco-navbar .navbar-brand:hover {
+            color: green !important;
+        }
+
+        /* Main container with flexible layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .image-text-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .image-text {
+            flex: 1 1 calc(50% - 20px);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .image-text img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease-out;
+        }
+
+        .image-text p {
+            color: white;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .image-text:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Mobile responsiveness - stack the content vertically */
+        @media screen and (max-width: 768px) {
+            .image-text {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Styling for fact of the day section */
+        .fact-of-the-day {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+
+        /* Typing animation for the text */
+        #typing-animation {
+            position: relative;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgb(255, 255, 255);
+            overflow: hidden;
+            white-space: nowrap;
+            animation: typing 3s steps(20, end) infinite;
+        }
+
+        #typing-animation:before {
+            content: "";
+            width: 0;
+            height: 100%;
+            background-color: #ccc;
+            animation: typing-cursor 0.5s ease-in-out infinite;
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes typing-cursor {
+            from {
+                width: 5px;
+            }
+            to {
+                width: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <img src="images/logo.jfif" alt="Homerton Grammar School" width="60" height="50" vspace="1" hspace="10"><br><span>
+        <a class="navbar-brand" href="index.html" hspace="100" font-family="cambria">EXPLORE SPACE</a></span>
+
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="home.html" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link"><span>About</span></a></li>
+                <li class="nav-item"><a href="projects.html" class="nav-link"><span>Missions</span></a></li>
+                <li class="nav-item"><a href="kids.html" class="nav-link"><span>For Kids</span></a></li>
+                <li class="nav-item"><a href="#quiz-section" class="nav-link"><span>Quiz</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<section id="about" class="ftco-about img ftco-section ftco-no-pb">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+            <div class="col-md-7 heading-section text-center">
+                <h1 class="big big-2">SPACE</h1>
+                <h2 class="mb-4" style="color: white;">About</h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Image and Text Section -->
+<div class="container image-text-wrapper">
+    <!-- First Image and Text -->
+    <div class="image-text">
+        <img src="images/bigbang.jpg" alt="Big Bang">
+        <p><b><u><i>Big Bang</i></u></b> and the Beginning of Space: The expansion of space traces back to the Big Bang, which wasn't an explosion in space, but rather the rapid expansion of space itself from an extremely hot, dense point about 13.8 billion years ago. This rapid expansion, called "cosmic inflation," happened faster than the speed of light and set the stage for the universe we see today.</p>
+    </div>
+    
+    <!-- Second Image and Text -->
+    <div class="image-text">
+        <img src="images/blackhole.jpg" alt="Black Hole">
+        <p><b><u><i>Black holes</i></u></b> are regions of space where gravity is so intense that nothing, not even light, can escape from them. They form when massive stars collapse under their own gravity at the end of their life cycles. The core becomes a singularity, a point of infinite density, while the surrounding region is the event horizon—the "point of no return." Black holes can range in size.</p>
+    </div>
+</div>
+
+<!-- Additional Content (Optional, Repeated Section) -->
+
+<div class="container image-text-wrapper">
+    <!-- Third Image and Text -->
+    <div class="image-text">
+        <img src="images/neutron.jpg" alt="Neutron Star">
+        <p><b><u><i>Neutron stars</i></u></b> are the remnants of stars that have exploded in a supernova. What remains is an incredibly dense core composed almost entirely of neutrons. These stars are small (about 10-20 kilometers across) but incredibly dense—one teaspoon of neutron star material would weigh about a billion tons. Neutron stars also have incredibly strong magnetic fields and can rotate at speeds up to 600 times per second. Some neutron stars emit regular pulses of radiation, known as pulsars, which make them detectable across vast distances.</p>
+    </div>
+    
+    <!-- Fourth Image and Text -->
+    <div class="image-text">
+        <img src="images/quasar.jfif" alt="Neutron Star">
+        <p><b><u><i>Quasars</i></u></b> are incredibly bright and energetic objects found at the centers of some distant galaxies. They are powered by supermassive black holes that are actively feeding on surrounding gas and dust, releasing enormous amounts of energy as matter falls into the black hole. This process can outshine an entire galaxy, making quasars some of the most powerful objects in the universe.</p>
+    </div>
+</div>
+
+
+<!-- Fact of the Day Section -->
+<section id="fact-section" class="container fact-of-the-day">
+    <h2>Fact of the Day</h2>
+    <p>Did you know? Jupiter's moon Ganymede is the largest moon in our solar system and is even bigger than the planet Mercury!</p>
+</section>
+
+<!-- Footer Section -->
+<footer class="ftco-footer">
+    <div class="text-center">
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by Students of class XI of <a href="https://www.homertongrammar.com/"><b><u>Homerton Grammar School  , Sector-21A , Faridabad</u></b></a>
+    </div>
+</footer>
+
+<!-- Linking JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
